@@ -17,7 +17,7 @@ a {
   list-style: none;
   text-decoration: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 header {
@@ -165,10 +165,12 @@ header {
   margin-left: 50px;
   background-color: grey;
 }
-.carosel-contents{
+
+.carosel-contents {
   padding-top: 90px;
 }
-.categories{
+
+.categories {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -178,7 +180,8 @@ header {
   width: 205px;
   height: auto;
 }
-.categories h4{
+
+.categories h4 {
   font-size: 18px;
   font-weight: 600;
   color: #1f274a;
@@ -186,10 +189,12 @@ header {
   line-height: normal;
   padding-left: 30px;
 }
-.categories-ul{
+
+.categories-ul {
   padding-bottom: 5px;
 }
-.categories-ul li{
+
+.categories-ul li {
   cursor: pointer;
   padding: 15px 0px;
   font-size: 14px;
@@ -200,7 +205,8 @@ header {
   display: inline-block;
   width: 100%;
 }
-.categories-ul li::after{
+
+.categories-ul li::after {
   content: '';
   display: flex;
   width: 145px;
@@ -209,7 +215,8 @@ header {
   opacity: 0.2;
   margin-top: 20px;
 }
-.categories-btn{
+
+.categories-btn {
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
@@ -218,4 +225,72 @@ header {
   border: 1px solid #092445;
   padding: 11px 27px 12px;
   margin-left: 30px;
+  border-radius: 5px;
+}
+.categories-btn:hover{
+  background-color: var(--bg);
+  color: var(--text-white);
+}
+
+.carousel-coantiner {
+  width: 650px;
+}
+.carousel-coantiner img{
+  width: 730px;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 600px;
+  border-radius: 5px;
+}
+.carousel-control-prev-icon{
+  background-image: url(./ASSETS/arrow-left-square.svg) !important;
+}
+.carousel-control-next-icon{
+  background-image: url(./ASSETS/arrow-left-square.svg) !important;
+  transform: rotate(180deg);
+}
+.benifits{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  background: #edefef;
+  border-radius: 10px;
+  width: 205px;
+  height: auto;
+}
+.benifits h4{
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f274a;
+  text-transform: capitalize;
+  line-height: normal;
+  padding-left: 30px;
+}
+.benifits .cc-content{
+  padding: 7px 30px;
+}
+.benifits .cc-content::after{
+  content: '';
+  display: flex;
+  width: 145px;
+  height: 1px;
+  background-color: #505771;
+  opacity: 0.2;
+  margin-top: 20px;
+}
+.cc-content h6{
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f274a;
+  text-transform: capitalize;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.cc-content p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #505771;
+  text-transform: none;
+  line-height: normal;
 }
